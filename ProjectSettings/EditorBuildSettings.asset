@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Done/DoneScenes/DoneStealth.unity
+    guid: 65954b6251e793f419956b70f6bb1d54
+  - enabled: 1
+    path: Assets/Scenes/Splash.unity
+    guid: b03e43379cc686c429e5e7a68f53fcfa
