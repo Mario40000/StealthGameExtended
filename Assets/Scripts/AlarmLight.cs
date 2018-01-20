@@ -12,12 +12,14 @@ public class AlarmLight : MonoBehaviour
 
     private float targetIntensity;
 
+    //Le damos la intesidad a luz
     private void Awake()
     {
         GetComponent<Light>().intensity = 0f;
         targetIntensity = highIntensity;
     }
 
+    //Si estamos en modo de alarma, subimos y bajamos la intensidad de las luces
     private void Update()
     {
         if(alarmOn)
@@ -31,6 +33,7 @@ public class AlarmLight : MonoBehaviour
         }
     }
 
+    //Tomamos el punto mas alto y mas bajo de intensidad para que no pasen de ahi y suban o bajen
     void CheckTargetIntensity ()
     {
         if(Mathf.Abs(targetIntensity - GetComponent<Light>().intensity) < changeMargin)

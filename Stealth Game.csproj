@@ -244,7 +244,11 @@
     <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneTags.cs" />
     <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
     <Compile Include="Assets\Scripts\AlarmLight.cs" />
+    <Compile Include="Assets\Scripts\CCTVPlayerDetection.cs" />
     <Compile Include="Assets\Scripts\Game\SplashScreenController.cs" />
+    <Compile Include="Assets\Scripts\LastPlayerSighting.cs" />
+    <Compile Include="Assets\Scripts\SceneFadeInOut.cs" />
+    <Compile Include="Assets\Scripts\Tags.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\ReflectiveDiffuseSpecTransp.shader" />
