@@ -230,6 +230,9 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyAnimation.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyShooting.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemySight.cs" />
+    <Compile Include="Assets\Scripts\Game\SimpleHealthBar.cs" />
+    <Compile Include="Assets\Scripts\Game\SplashScreenController.cs" />
+    <Compile Include="Assets\Scripts\Game\TitleSceneController.cs" />
     <Compile Include="Assets\Scripts\ImageEffects\Brightness.cs" />
     <Compile Include="Assets\Scripts\Menu\Pause.cs" />
     <Compile Include="Assets\Scripts\Misc\AnimatorSetup.cs" />
@@ -254,6 +257,11 @@
     <Compile Include="Assets\Scripts\Player\ThirdPersonCharacter.cs" />
     <Compile Include="Assets\Shaders\ImageEffects\Bloom_V2\PostEffectsBase.cs" />
     <Compile Include="Assets\Shaders\ImageEffects\Bloom_V2\VideoBloom.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\AsteroidController.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\HealthPickupController.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\SMAA\Scripts\DebugPass.cs" />
     <Compile Include="Assets\SMAA\Scripts\EdgeDetectionMethod.cs" />
     <Compile Include="Assets\SMAA\Scripts\HDRMode.cs" />
@@ -272,6 +280,7 @@
     <None Include="Assets\SMAA\Shaders\SMAA.shader" />
     <None Include="Assets\Shaders\ImageEffects\Bloom_V2\VideoBloom.shader" />
     <None Include="Assets\Shaders\ImageEffects\BrightnessEffect.shader" />
+    <None Include="Assets\Simple Health Bar\README.txt" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />

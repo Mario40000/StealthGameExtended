@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stealth extended", "Stealth extended.csproj", "{77121411-2271-8A6B-EE2E-37A2A5745590}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stealth extended.Plugins", "Stealth extended.Plugins.csproj", "{01551B5E-0BC7-3439-1898-510ED2E65B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stealth extended", "Stealth extended.csproj", "{77121411-2271-8A6B-EE2E-37A2A5745590}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stealth extended.Editor", "Stealth extended.Editor.csproj", "{22823693-ECA0-CCBB-2ECC-97BEB2B5216E}"
 EndProject
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{77121411-2271-8A6B-EE2E-37A2A5745590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77121411-2271-8A6B-EE2E-37A2A5745590}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77121411-2271-8A6B-EE2E-37A2A5745590}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77121411-2271-8A6B-EE2E-37A2A5745590}.Release|Any CPU.Build.0 = Release|Any CPU
 		{01551B5E-0BC7-3439-1898-510ED2E65B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{01551B5E-0BC7-3439-1898-510ED2E65B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01551B5E-0BC7-3439-1898-510ED2E65B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01551B5E-0BC7-3439-1898-510ED2E65B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77121411-2271-8A6B-EE2E-37A2A5745590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77121411-2271-8A6B-EE2E-37A2A5745590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77121411-2271-8A6B-EE2E-37A2A5745590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77121411-2271-8A6B-EE2E-37A2A5745590}.Release|Any CPU.Build.0 = Release|Any CPU
 		{22823693-ECA0-CCBB-2ECC-97BEB2B5216E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{22823693-ECA0-CCBB-2ECC-97BEB2B5216E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22823693-ECA0-CCBB-2ECC-97BEB2B5216E}.Release|Any CPU.ActiveCfg = Release|Any CPU

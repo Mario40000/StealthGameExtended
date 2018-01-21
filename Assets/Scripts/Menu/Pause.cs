@@ -15,7 +15,7 @@ public class Pause : MonoBehaviour {
     [HideInInspector]		
     public bool isPaused;
 
-    bool hasStarted = false;
+    bool hasStarted = true;
     float originalVignette;
     float originalBlur;
     float originalDistance;
@@ -28,7 +28,9 @@ public class Pause : MonoBehaviour {
         originalBlur = vignette.blur;
         originalDistance = vignette.blurDistance;
         brightness = Camera.main.GetComponent<Brightness>();
-        DoPause();
+        //DoPause();
+        UnPause();
+
     }
 
     // Update is called once per frame

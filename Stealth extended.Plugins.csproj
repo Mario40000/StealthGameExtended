@@ -267,6 +267,7 @@
     <None Include="Assets\SMAA\Shaders\SMAA.shader" />
     <None Include="Assets\Shaders\ImageEffects\Bloom_V2\VideoBloom.shader" />
     <None Include="Assets\Shaders\ImageEffects\BrightnessEffect.shader" />
+    <None Include="Assets\Simple Health Bar\README.txt" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />

@@ -291,6 +291,7 @@
     <Compile Include="Assets\Editor\ImageEffects\TonemappingEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
     <Compile Include="Assets\Shaders\ImageEffects\Bloom_V2\Editor\VideoBloomEditor.cs" />
+    <Compile Include="Assets\Simple Health Bar\Editor\SimpleHealthBarEditor.cs" />
     <Compile Include="Assets\SMAA\Scripts\Editor\MinDrawer.cs" />
     <Compile Include="Assets\SMAA\Scripts\Editor\SMAAEditor.cs" />
   </ItemGroup>
@@ -303,6 +304,7 @@
     <None Include="Assets\SMAA\Shaders\SMAA.shader" />
     <None Include="Assets\Shaders\ImageEffects\Bloom_V2\VideoBloom.shader" />
     <None Include="Assets\Shaders\ImageEffects\BrightnessEffect.shader" />
+    <None Include="Assets\Simple Health Bar\README.txt" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />

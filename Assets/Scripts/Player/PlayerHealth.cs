@@ -2,12 +2,16 @@ using UnityEngine;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
-	
-	// How much health the player has left.
+
+    public SimpleHealthBar healthBar;
+
+    // How much health the player has left.
+    const  float maxHealth = 300f;
     public float health = 100f;	
 	// How much time from the player dying to the level reseting.
 	public float resetAfterDeathTime = 5f;
     // A bool to show if the player is dead or not.
+    
     [HideInInspector]
     public bool playerDead;		
 
@@ -28,7 +32,8 @@ public class PlayerHealth : MonoBehaviour {
 		hash = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<HashIDs>();
 		sceneFadeInOut = GameObject.FindGameObjectWithTag(Tags.fader).GetComponent<SceneFadeInOut>();
 		lastPlayerSighting = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<LastPlayerSighting>();
-	}
+        
+    }
 	
     void Update() {
 		// If health is less than or equal to 0...
@@ -44,7 +49,8 @@ public class PlayerHealth : MonoBehaviour {
 				LevelReset();
 			}
 		}
-	}
+        healthBar.UpdateBar(health,maxHealth);
+    }
 	
 	void PlayerDying() {
 		// The player is now dead.
