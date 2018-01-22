@@ -232,6 +232,7 @@
     <Compile Include="Assets\Scripts\Enemy\EnemySight.cs" />
     <Compile Include="Assets\Scripts\Game\SimpleHealthBar.cs" />
     <Compile Include="Assets\Scripts\Game\SplashScreenController.cs" />
+    <Compile Include="Assets\Scripts\Game\TextDestroyer.cs" />
     <Compile Include="Assets\Scripts\Game\TitleSceneController.cs" />
     <Compile Include="Assets\Scripts\ImageEffects\Brightness.cs" />
     <Compile Include="Assets\Scripts\Menu\Pause.cs" />

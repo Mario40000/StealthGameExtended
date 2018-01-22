@@ -1,9 +1,13 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour {
 
     public SimpleHealthBar healthBar;
+    public GameObject damagePopUp;
+
+    private Transform player;
 
     // How much health the player has left.
     const  float maxHealth = 300f;
@@ -27,8 +31,9 @@ public class PlayerHealth : MonoBehaviour {
     float timer;					
 	
 	void Awake() {
-		// Setting up the references.
-		anim = GetComponent<Animator>();
+        // Setting up the references.
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        anim = GetComponent<Animator>();
 		hash = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<HashIDs>();
 		sceneFadeInOut = GameObject.FindGameObjectWithTag(Tags.fader).GetComponent<SceneFadeInOut>();
 		lastPlayerSighting = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<LastPlayerSighting>();
@@ -88,5 +93,13 @@ public class PlayerHealth : MonoBehaviour {
 	public void TakeDamage(float amount) {
 		// Decrement the player's health by amount.
         health -= amount;
+        PopUpInstancier(Mathf.Round(amount));
+    }
+    //Metodo para hacer aparecer el popup del daño
+    void PopUpInstancier(float damage)
+    {
+        Instantiate(damagePopUp, player.position, Quaternion.identity);
+        GameObject damageAmount = GameObject.FindGameObjectWithTag("PopUp");
+        damageAmount.GetComponentInChildren<Text>().text = damage+"";
     }
 }
