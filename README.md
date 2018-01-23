@@ -11,12 +11,12 @@ Improvements
 
 - Minimap
 
--Enemy status by color
+- Enemy status by color
 
--Health bar
+- Health bar
 
--Screen navigation
+- Screen navigation
 
--GamePad support
+- GamePad support
 
 Máster en diseño y desarrollo de videojuegos de la UOC
