@@ -15,8 +15,10 @@ Improvements
 
 - Health bar
 
+- Damage popups
+
 - Screen navigation
 
-- GamePad support
+- GamePad rumble support (in progress)
 
 Máster en diseño y desarrollo de videojuegos de la UOC
