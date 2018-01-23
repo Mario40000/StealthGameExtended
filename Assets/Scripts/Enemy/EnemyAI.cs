@@ -3,6 +3,10 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour {
 
+    //Cogemos el color de las luces para cambiarlas segun el estado
+    public GameObject patrolLight;
+    public GameObject patrolBeam;
+    
     // The nav mesh agent's speed when patrolling.
     public float patrolSpeed = 2f;
     // The nav mesh agent's speed when chasing.			
@@ -38,6 +42,9 @@ public class EnemyAI : MonoBehaviour {
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         playerHealth = GameObject.FindGameObjectWithTag(Tags.player).GetComponent<PlayerHealth>();
         lastPlayerSighting = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<LastPlayerSighting>();
+
+        patrolBeam.GetComponent<Light>().color = Color.green;
+        patrolLight.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
     }
 
     void Update() {
@@ -47,18 +54,26 @@ public class EnemyAI : MonoBehaviour {
 
         // If the player is in shooting range we shoot him.
         if (enemySight.playerInShootingRange) {
+            patrolBeam.GetComponent<Light>().color = Color.red;
+            patrolLight.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
             Shooting();
         }
         // If the player has triggered an alarm, run to investigate.
         else if (lastPlayerSighting.lastPlayerPosition != lastPlayerSighting.resetPosition) {
+            patrolBeam.GetComponent<Light>().color = Color.yellow;
+            patrolLight.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
             Chasing(true);
         }
         // If the player has been sighted or heard we investigate or chase.
         else if (enemySight.lastPlayerPosition != lastPlayerSighting.resetPosition) {
+            patrolBeam.GetComponent<Light>().color = Color.yellow;
+            patrolLight.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
             Chasing();
         }
         // Otherwise patrol.
         else {
+            patrolBeam.GetComponent<Light>().color = Color.green;
+            patrolLight.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
             Patrolling();
         }
     }
