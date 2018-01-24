@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.Windows;
+
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -37,6 +39,7 @@ public class PlayerHealth : MonoBehaviour {
 		hash = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<HashIDs>();
 		sceneFadeInOut = GameObject.FindGameObjectWithTag(Tags.fader).GetComponent<SceneFadeInOut>();
 		lastPlayerSighting = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<LastPlayerSighting>();
+        
         
     }
 	
@@ -91,7 +94,8 @@ public class PlayerHealth : MonoBehaviour {
 	}
 	
 	public void TakeDamage(float amount) {
-		// Decrement the player's health by amount.
+        // Decrement the player's health by amount.
+        
         health -= amount;
         PopUpInstancier(Mathf.Round(amount));
     }
