@@ -21,4 +21,8 @@ Improvements
 
 - GamePad rumble support (in progress)
 
+- Numeric control pad enabled
+
+[Video](https://youtu.be/VUmfzPUD_bc)
+
 Máster en diseño y desarrollo de videojuegos de la UOC
