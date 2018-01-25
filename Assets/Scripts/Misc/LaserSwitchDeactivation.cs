@@ -136,17 +136,42 @@ public class LaserSwitchDeactivation : MonoBehaviour {
             return;
         }
 
-        if (inUse) {
+        
+        if (inUse)
+        {
             // Unlock the cursor.
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+
+            //Funcionalidad para recoger el codigo numerico desde el numPad
+            if (Input.GetKeyDown(KeyCode.Keypad1))
+                ButtonCallback(1);
+            else if (Input.GetKeyDown(KeyCode.Keypad2))
+                ButtonCallback(2);
+            else if (Input.GetKeyDown(KeyCode.Keypad3))
+                ButtonCallback(3);
+            else if (Input.GetKeyDown(KeyCode.Keypad4))
+                ButtonCallback(4);
+            else if (Input.GetKeyDown(KeyCode.Keypad5))
+                ButtonCallback(5);
+            else if (Input.GetKeyDown(KeyCode.Keypad6))
+                ButtonCallback(6);
+            else if (Input.GetKeyDown(KeyCode.Keypad7))
+                ButtonCallback(7);
+            else if (Input.GetKeyDown(KeyCode.Keypad8))
+                ButtonCallback(8);
+            else if (Input.GetKeyDown(KeyCode.Keypad9))
+                ButtonCallback(9);
         }
 
-        if (Input.GetButtonDown("Switch")) {
-            if (inUse) {
+        if (Input.GetButtonDown("Switch"))
+        {
+            if (inUse)
+            {
                 RepositionCamera(false);
             }
-            else {
+            else
+            {
                 RepositionCamera(true);
             }
         }
