@@ -19,9 +19,11 @@ Improvements
 
 - Screen navigation
 
-- GamePad rumble support (in progress)
+- On hit, player change color
 
 - Numeric control pad enabled
+
+- GamePad rumble support (in progress)
 
 [Video](https://youtu.be/VUmfzPUD_bc)
 

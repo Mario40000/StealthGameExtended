@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour {
 
     public SimpleHealthBar healthBar;
     public GameObject damagePopUp;
+    public Material playerColor;
+    public float colorTime;
 
     private Transform player;
 
@@ -59,6 +61,13 @@ public class PlayerHealth : MonoBehaviour {
 		}
         healthBar.UpdateBar(health,maxHealth);
     }
+
+    IEnumerator PlayerHitColor ()
+    {
+        playerColor.SetColor("_Color", Color.red);
+        yield return new WaitForSeconds(colorTime);
+        playerColor.SetColor("_Color", Color.white);
+    }
 	
 	void PlayerDying() {
 		// The player is now dead.
@@ -95,7 +104,7 @@ public class PlayerHealth : MonoBehaviour {
 	
 	public void TakeDamage(float amount) {
         // Decrement the player's health by amount.
-        
+        StartCoroutine(PlayerHitColor());
         health -= amount;
         PopUpInstancier(Mathf.Round(amount));
     }
