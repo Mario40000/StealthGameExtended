@@ -1,7 +1,7 @@
 ﻿# StealthGameExtended
 Extension of the game stealth for Unity, based on:
 
-[Oficcial tutorials](https://www.youtube.com/playlist?list=PLX2vGYjWbI0QGyfO8PKY1pC8xcRb0X-nP)
+[Official tutorials](https://www.youtube.com/playlist?list=PLX2vGYjWbI0QGyfO8PKY1pC8xcRb0X-nP)
 
 [Stealth extended from Twiik](http://twiik.net/projects/stealth-extended)
 
