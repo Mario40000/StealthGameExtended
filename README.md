@@ -23,7 +23,7 @@ Improvements
 
 - Numeric control pad enabled
 
-- GamePad rumble support (in progress)
+- GamePad rumble support
 
 [Video](https://youtu.be/VUmfzPUD_bc)
 
