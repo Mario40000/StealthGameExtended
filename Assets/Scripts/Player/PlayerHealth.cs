@@ -1,8 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using UnityEngine.Windows;
-
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -10,6 +8,8 @@ public class PlayerHealth : MonoBehaviour {
     public GameObject damagePopUp;
     public Material playerColor;
     public float colorTime;
+
+    private VibrateController controller = new VibrateController();
 
     private Transform player;
 
@@ -105,8 +105,17 @@ public class PlayerHealth : MonoBehaviour {
 	public void TakeDamage(float amount) {
         // Decrement the player's health by amount.
         StartCoroutine(PlayerHitColor());
+        StartCoroutine(Rumble());
         health -= amount;
         PopUpInstancier(Mathf.Round(amount));
+    }
+
+    //Vibracion del mando al recibir daño
+    IEnumerator Rumble()
+    {
+        controller.Rumble(0, 1f,1f);
+        yield return new WaitForSeconds(0.3f);
+        controller.Rumble(0, 0.0f, 0.0f);
     }
     //Metodo para hacer aparecer el popup del daño
     void PopUpInstancier(float damage)

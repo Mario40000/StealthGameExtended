@@ -265,6 +265,9 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/Mario/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="XInputDotNetPure">
+      <HintPath>Assets/Scripts/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Stealth extended.Plugins.csproj">
@@ -302,6 +305,8 @@
     <None Include="Assets\SMAA\Shaders\DeferredTerrain.shader" />
     <None Include="Assets\SMAA\Shaders\SMAA.cginc" />
     <None Include="Assets\SMAA\Shaders\SMAA.shader" />
+    <None Include="Assets\Scripts\XInputDotNet\Docs.txt" />
+    <None Include="Assets\Scripts\XInputDotNet\MITLicense.txt" />
     <None Include="Assets\Shaders\ImageEffects\Bloom_V2\VideoBloom.shader" />
     <None Include="Assets\Shaders\ImageEffects\BrightnessEffect.shader" />
     <None Include="Assets\Simple Health Bar\README.txt" />

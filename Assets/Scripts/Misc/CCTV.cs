@@ -8,6 +8,8 @@ public class CCTV : MonoBehaviour {
     public float rotationSpeed = 15;
     public float trackPlayerSpeed = 4;
 
+    private VibrateController controller = new VibrateController();
+
 	// Reference to the player.
     GameObject player;				
 	// Reference to the global last sighting of the player.
@@ -51,6 +53,7 @@ public class CCTV : MonoBehaviour {
 		if (other.gameObject == player) {
             // Don't do anything unless we can see the player. He could be behind something.
             Vector3 direction = player.transform.position - transform.position;
+            StartCoroutine(Rumble());
 
             RaycastHit hit;
             if (Physics.Raycast(transform.position, direction, out hit)) {
@@ -77,5 +80,13 @@ public class CCTV : MonoBehaviour {
         if (other.gameObject == player) {
             lockedOnPlayer = false;
         }
+    }
+
+    //Metodo para vibrar si nos detecta la camara
+    IEnumerator Rumble()
+    {
+        controller.Rumble(0, 0.2f, 0.2f);
+        yield return new WaitForSeconds(0.5f);
+        controller.Rumble(0, 0.0f, 0.0f);
     }
 }
